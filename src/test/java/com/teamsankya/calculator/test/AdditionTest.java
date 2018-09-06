@@ -9,19 +9,14 @@ import org.junit.runners.Parameterized;
 import com.teamsankya.calculator.operations.Addition;
 
 
-@RunWith(Parameterized.class)
+
 public class AdditionTest {
-	private int a;
-	private int b;
-	private int sum;
-	public AdditionTest(int a, int b, int sum) {
-		this.a=a;
-		this.b=b;
-		this.sum=sum;	}
+	
+	
  @Test
 	public void addIntTest() {
 		int sum = Addition.add(20, 30);
-		Assert.assertEquals(this.sum, sum);
+		Assert.assertEquals(50, sum);
 		
 		
 		
