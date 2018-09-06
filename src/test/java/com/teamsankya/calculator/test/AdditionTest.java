@@ -14,19 +14,19 @@ public class AdditionTest {
 	private int a;
 	private int b;
 	private int sum;
-	public AdditionTest() {
+	public AdditionTest(int a, int b, int sum) {
 		this.a=a;
 		this.b=b;
 		this.sum=sum;	}
  @Test
 	public void addIntTest() {
 		int sum = Addition.add(20, 30);
-		Assert.assertEquals(50, sum);
+		Assert.assertEquals(this.sum, sum);
 		
 		
 		
-		@Parameters
-		public static void inputsAndOutputs() {
+		
+	/*	public static void inputsAndOutputs() {
 		return Arrays.asList(new Object[][] {
 		{1,2,3},
 		{5,5,10},
@@ -34,7 +34,7 @@ public class AdditionTest {
 		{-4,5,1}
 		});
 		}
-		
+		*/
 		
  }
 }

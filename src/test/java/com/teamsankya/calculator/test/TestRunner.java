@@ -8,16 +8,22 @@ import org.junit.runner.notification.Failure;
 
 import com.teamsankya.calculator.test.AdditionTest;
 
+import junit.framework.TestCase;
+
 public class TestRunner {
 
-	public static void main(String[] args) {
-		Result result = JUnitCore.runClasses(AdditionTest.class);
+	 public static void main(String[] args) 
+		
+	
+		
+		{ Result result = JUnitCore.runClasses(TestCase.class);
 		List<Failure> failures = result.getFailures();
 		for (Failure failure : failures) {
 		System.out.println(failure.getMessage());
 		}
 		System.out.println(result.wasSuccessful());
 		}
+		
 	}
 
 
